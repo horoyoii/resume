@@ -1,0 +1,41 @@
+.header-deco {
+    width: 80px;
+    height: 10px;
+    margin-bottom: 15px;
+    background-color: #990000;
+}
+
+
+.sub_heading{
+  color:#868e96;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+h1{
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.sub_info{
+  display: block;
+  margin-top: 5px;
+}
+
+a{
+  text-decoration:none;
+  target:_blank
+}
+
+.intro_content{
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 200;
+  font-family: "Spoqa Han Sans", sans-serif;
+}

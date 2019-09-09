@@ -1,0 +1,15 @@
+.tech_element{
+    display: inline-block;
+    padding: .3em .9em;
+    margin: 0 .5em .5em 0;
+    white-space: nowrap;
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    font-size: 16px!important;
+    color: blue
+}
+
+.tech_container{
+  margin-top: 2px;
+  margin-left: 3px;
+}
