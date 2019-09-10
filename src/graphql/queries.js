@@ -73,6 +73,15 @@ export const createWork = `mutation createWorkSingle($var : CreateWorkInput!){
   }
 }`;
 
+export const updateVisitors= `mutation UpdateToday($var : UpdateVisitorsInput!){
+  updateVisitors(input : $var){
+    id
+    m_today
+    m_total
+  }
+}`;
+
+
 export const listLanguages = `query listLanguages(
   $filter: TableLanguageFilterInput
   $limit: Int
@@ -81,6 +90,23 @@ export const listLanguages = `query listLanguages(
   listLanguages(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       title
+    }
+    nextToken
+  }
+}
+`;
+export const listActivities = `query listActivities(
+  $filter: TableActivityFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listActivities(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      subtitle
+      content
+      period
     }
     nextToken
   }
