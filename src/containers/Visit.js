@@ -15,7 +15,7 @@ export default class Visit extends Component{
   }
 
   async componentDidMount() {
-    //componentDidMount에서는 DOM에 접근할 수 있습니다. 그래서 여기에서는 주로 AJAX 요청을 하거나, setTimeout, setInterval같은 행동
+    /*
     const res = await API.graphql(graphqlOperation(queries.updateVisitors,  {
     "var": {
       "id": "723e2b0d-8478-48f7-9802-cf1d38f7f303"
@@ -34,7 +34,8 @@ export default class Visit extends Component{
       today : res['data']['updateVisitors']['m_today'],
       total : res['data']['updateVisitors']['m_total']
   })
-
+    */
+   
   }
 
   render(){

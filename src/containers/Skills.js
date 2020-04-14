@@ -24,6 +24,7 @@ export default class Skills extends Component{
 
   async componentDidMount() {
     //componentDidMount에서는 DOM에 접근할 수 있습니다. 그래서 여기에서는 주로 AJAX 요청을 하거나, setTimeout, setInterval같은 행동
+    /*
     const allworks = await API.graphql(graphqlOperation(queries.listLanguages));
     let get_experiences = allworks['data']['listLanguages']['items']
     console.log(allworks['data']);
@@ -32,7 +33,7 @@ export default class Skills extends Component{
     get_experiences.map(ex =>{
       this.state.tmp_list.push(ex.title);
     })
-
+    */
     this.setState({lang_list : this.state.tmp_list})
   }
 

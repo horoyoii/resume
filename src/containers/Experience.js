@@ -17,12 +17,22 @@ export default class Experience extends Component{
   }
 
   async componentDidMount() {
-    //componentDidMount에서는 DOM에 접근할 수 있습니다. 그래서 여기에서는 주로 AJAX 요청을 하거나, setTimeout, setInterval같은 행동
-    const allworks = await API.graphql(graphqlOperation(queries.listActivities));
-    let get_experiences = allworks['data']['listActivities']['items']
-    console.log(allworks['data']);
+    
+    const qeury_result = await API.graphql(graphqlOperation(queries.listExperiences));
+    let activities = qeury_result['data']['listExperiences']['items']
+    console.log(qeury_result['data']);
+    
+    activities.sort(function (a, b) {
+      if (a.period > b.period) {
+          return 1;
+      }
+      if (b.period > a.period) {
+          return -1;
+      }
+      return 0;
+    });
 
-    this.setState({experiences : get_experiences})
+    this.setState({experiences : activities})
   }
 
 

@@ -8,6 +8,8 @@ import TechList from './containers/TechList'
 import Experience from './containers/Experience'
 import Skills from './containers/Skills'
 import Visit from './containers/Visit'
+import Test from './containers/Test'
+import Presentation from './containers/Presentation'
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
       <Visit/>
       <Intro/>
       <Skills/>
-      <Works/>
       <Experience/>
+      <Presentation/>
+      <Works/>
     </div>
   );
 }

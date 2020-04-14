@@ -1,14 +1,14 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "resumeapp-dev-20190908170835-authRole",
-            "UnauthRoleArn": "arn:aws:iam::279628193774:role/resumeapp-dev-20190908170835-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::279628193774:role/resumeapp-dev-20190908170835-authRole",
+            "AuthRoleName": "resumeapp-dev-20200414042310-authRole",
+            "UnauthRoleArn": "arn:aws:iam::273175648656:role/resumeapp-dev-20200414042310-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::273175648656:role/resumeapp-dev-20200414042310-authRole",
             "Region": "ap-northeast-2",
-            "DeploymentBucketName": "resumeapp-dev-20190908170835-deployment",
-            "UnauthRoleName": "resumeapp-dev-20190908170835-unauthRole",
-            "StackName": "resumeapp-dev-20190908170835",
-            "StackId": "arn:aws:cloudformation:ap-northeast-2:279628193774:stack/resumeapp-dev-20190908170835/daddc460-d20f-11e9-9afd-02e14c576202"
+            "DeploymentBucketName": "resumeapp-dev-20200414042310-deployment",
+            "UnauthRoleName": "resumeapp-dev-20200414042310-unauthRole",
+            "StackName": "resumeapp-dev-20200414042310",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:273175648656:stack/resumeapp-dev-20200414042310/28f17d60-7dbc-11ea-bb4e-061f2b82ef26"
         }
     }
 }
