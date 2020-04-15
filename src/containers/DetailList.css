@@ -1,0 +1,12 @@
+.detail_subtitle{
+  color: #990000;
+  font-weight: 1000;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.detail_content{
+  margin-top: 0em;
+  display: block;
+}

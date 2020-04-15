@@ -12,7 +12,8 @@ export default class Intro extends Component{
       position: "Student",
       blog: "https://blog.naver.com/demonic3540",
       github : "https://github.com/horoyoii",
-      content: "끊임없이 머리 속에 떠오르는 프로젝트들을 구현해내기 위하여 끊임없는 배움을 추구합니다. 비록 화려한 커리어는 없지만 높은 러닝 커브을 가지며... 나중에 써야겠다"
+      content: "I have very few knowledge of CS, which means there are so many things left to be DISCOVERED by me. This is great.",
+      subtitle: "I always think : What will I develop tomorrow?"
     }
   }
 
@@ -31,6 +32,7 @@ export default class Intro extends Component{
           <span className="sub_info">email : <a href={this.state.email} target="_blank">{this.state.email}</a></span>
 
           <p className="intro_content">{this.state.content}</p>
+          <p className="intro_content">{this.state.subtitle}</p>
         </div>
       </div>
     )

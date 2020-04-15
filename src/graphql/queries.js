@@ -176,3 +176,137 @@ export const listWorks = `query ListWorks(
   }
 }
 `;
+export const getDetail = `query GetDetail($id: ID!) {
+  getDetail(id: $id) {
+    id
+    title
+    content
+  }
+}
+`;
+export const listDetails = `query ListDetails(
+  $filter: TableDetailFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listDetails(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      content
+    }
+    nextToken
+  }
+}
+`;
+export const getProject = `query GetProject($id: ID!) {
+  getProject(id: $id) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const listProjects = `query ListProjects(
+  $filter: TableProjectFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProjects(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      decoration
+      period
+      title
+      tech
+      introduction
+      content {
+        id
+        title
+        content
+      }
+      git_url
+      detail_url
+    }
+    nextToken
+  }
+}
+`;
+export const getMyself = `query GetMyself($id: ID!) {
+  getMyself(id: $id) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const listOurselves = `query ListOurselves(
+  $filter: TableMyselfFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listOurselves(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      deco
+      period
+      title
+      tech
+      introduction
+      content
+      git_url
+      detail_url
+    }
+    nextToken
+  }
+}
+`;
+export const getArt = `query GetArt($id: ID!) {
+  getArt(id: $id) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const listArts = `query ListArts($filter: TableArtFilterInput, $limit: Int, $nextToken: String) {
+  listArts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      deco
+      period
+      title
+      tech
+      introduction
+      subtitle
+      content
+      git_url
+      detail_url
+    }
+    nextToken
+  }
+}
+`;

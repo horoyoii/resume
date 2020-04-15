@@ -190,3 +190,168 @@ export const deleteWork = `mutation DeleteWork($input: DeleteWorkInput!) {
   }
 }
 `;
+export const createDetail = `mutation CreateDetail($input: CreateDetailInput!) {
+  createDetail(input: $input) {
+    id
+    title
+    content
+  }
+}
+`;
+export const updateDetail = `mutation UpdateDetail($input: UpdateDetailInput!) {
+  updateDetail(input: $input) {
+    id
+    title
+    content
+  }
+}
+`;
+export const deleteDetail = `mutation DeleteDetail($input: DeleteDetailInput!) {
+  deleteDetail(input: $input) {
+    id
+    title
+    content
+  }
+}
+`;
+export const createProject = `mutation CreateProject($input: CreateProjectInput!) {
+  createProject(input: $input) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const updateProject = `mutation UpdateProject($input: UpdateProjectInput!) {
+  updateProject(input: $input) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const deleteProject = `mutation DeleteProject($input: DeleteProjectInput!) {
+  deleteProject(input: $input) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const createMyself = `mutation CreateMyself($input: CreateMyselfInput!) {
+  createMyself(input: $input) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const updateMyself = `mutation UpdateMyself($input: UpdateMyselfInput!) {
+  updateMyself(input: $input) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const deleteMyself = `mutation DeleteMyself($input: DeleteMyselfInput!) {
+  deleteMyself(input: $input) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const createArt = `mutation CreateArt($input: CreateArtInput!) {
+  createArt(input: $input) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const updateArt = `mutation UpdateArt($input: UpdateArtInput!) {
+  updateArt(input: $input) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const deleteArt = `mutation DeleteArt($input: DeleteArtInput!) {
+  deleteArt(input: $input) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;

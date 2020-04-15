@@ -322,3 +322,276 @@ export const onDeleteWork = `subscription OnDeleteWork(
   }
 }
 `;
+export const onCreateDetail = `subscription OnCreateDetail($id: ID, $title: String, $content: String) {
+  onCreateDetail(id: $id, title: $title, content: $content) {
+    id
+    title
+    content
+  }
+}
+`;
+export const onUpdateDetail = `subscription OnUpdateDetail($id: ID, $title: String, $content: String) {
+  onUpdateDetail(id: $id, title: $title, content: $content) {
+    id
+    title
+    content
+  }
+}
+`;
+export const onDeleteDetail = `subscription OnDeleteDetail($id: ID, $title: String, $content: String) {
+  onDeleteDetail(id: $id, title: $title, content: $content) {
+    id
+    title
+    content
+  }
+}
+`;
+export const onCreateProject = `subscription OnCreateProject(
+  $id: ID
+  $decoration: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onCreateProject(
+    id: $id
+    decoration: $decoration
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const onUpdateProject = `subscription OnUpdateProject(
+  $id: ID
+  $decoration: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onUpdateProject(
+    id: $id
+    decoration: $decoration
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const onDeleteProject = `subscription OnDeleteProject(
+  $id: ID
+  $decoration: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onDeleteProject(
+    id: $id
+    decoration: $decoration
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    decoration
+    period
+    title
+    tech
+    introduction
+    content {
+      id
+      title
+      content
+    }
+    git_url
+    detail_url
+  }
+}
+`;
+export const onCreateMyself = `subscription OnCreateMyself(
+  $id: ID
+  $deco: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onCreateMyself(
+    id: $id
+    deco: $deco
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const onUpdateMyself = `subscription OnUpdateMyself(
+  $id: ID
+  $deco: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onUpdateMyself(
+    id: $id
+    deco: $deco
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const onDeleteMyself = `subscription OnDeleteMyself(
+  $id: ID
+  $deco: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onDeleteMyself(
+    id: $id
+    deco: $deco
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const onCreateArt = `subscription OnCreateArt(
+  $id: ID
+  $deco: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onCreateArt(
+    id: $id
+    deco: $deco
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const onUpdateArt = `subscription OnUpdateArt(
+  $id: ID
+  $deco: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onUpdateArt(
+    id: $id
+    deco: $deco
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;
+export const onDeleteArt = `subscription OnDeleteArt(
+  $id: ID
+  $deco: String
+  $period: String
+  $title: String
+  $tech: [String]
+) {
+  onDeleteArt(
+    id: $id
+    deco: $deco
+    period: $period
+    title: $title
+    tech: $tech
+  ) {
+    id
+    deco
+    period
+    title
+    tech
+    introduction
+    subtitle
+    content
+    git_url
+    detail_url
+  }
+}
+`;
