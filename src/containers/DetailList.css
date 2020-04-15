@@ -1,6 +1,6 @@
 .detail_subtitle{
   color: #990000;
-  font-weight: 1000;
+  font-weight: 700;
   display: block;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -9,4 +9,6 @@
 .detail_content{
   margin-top: 0em;
   display: block;
+  font-weight: 200;
+  font-family: "Spoqa Han Sans", sans-serif;
 }

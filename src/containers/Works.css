@@ -39,6 +39,11 @@ border-bottom-color: rgb(225, 228, 232) !important;
   color: #868e96;
 }
 
+.element_title{
+  font-size: 18px;
+  font-family: "Spoqa Han Sans", sans-serif;
+}
+
 .element_content{
   margin-bottom: 10px;
   font-size: 20px;

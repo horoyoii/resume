@@ -20,16 +20,10 @@ export default class Experience extends Component{
     
     const qeury_result = await API.graphql(graphqlOperation(queries.listExperiences));
     let activities = qeury_result['data']['listExperiences']['items']
-    console.log(qeury_result['data']);
+
     
     activities.sort(function (a, b) {
-      if (a.period > b.period) {
-          return 1;
-      }
-      if (b.period > a.period) {
-          return -1;
-      }
-      return 0;
+      return a.period < b.period ? -1 : a.period > b.period ? 1 : 0; 
     });
 
     this.setState({experiences : activities})

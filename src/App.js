@@ -16,11 +16,9 @@ function App() {
     <div className="App container">
       <Visit/>
       <Intro/>
-      <Works/>
-      <Skills/>
       <Experience/>
       <Presentation/>
-
+      <Works/>
     </div>
   );
 }

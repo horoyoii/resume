@@ -18,9 +18,14 @@ export default class Works extends Component{
   }
 
   async componentDidMount() {
-
     const allworks = await API.graphql(graphqlOperation(queries.listArts));
-    this.setState({works : allworks['data']['listArts']['items']})    
+    let data = allworks['data']['listArts']['items'];
+
+    data.sort(function(a, b){
+      return a.period < b.period ? -1 : a.period > b.period ? 1 : 0; 
+    });
+
+    this.setState({works : data})    
   }
   
 
@@ -37,7 +42,7 @@ export default class Works extends Component{
                 <h3 className="element_heading" key={work.id}>{work.title}</h3>
                 <p className="element_period">({work.period})</p>
                 <TechList tech_list={work.tech}/>
-                <p>{work.introduction}</p>
+                <p className="element_title">{work.introduction}</p>
                 <DetailList subtitle={work.subtitle} content={work.content}/>
                 <a href ={work.git_url} className="experience_element_git_url" target="_blank">{work.git_url}</a><br/>
                 <a href ={work.detail_url} className="experience_element_git_url" target="_blank">{work.detail_url}</a>
